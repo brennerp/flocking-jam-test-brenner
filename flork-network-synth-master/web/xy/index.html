@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flork Network xy</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,
+            initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+        <link rel="stylesheet" type="text/css" href="../bower_components/normalize-css/normalize.css"></link>
+
+        <style type="text/css">
+            html, body {
+                height: 100%;
+                width: 100%;
+                overflow: hidden;
+            }
+
+            #pad {
+                background-color: #aaa;
+                color: #fff;
+                height: 100%;
+                width: 100%;
+            }
+        </style>
+
+        <script src="../bower_components/osc.js/dist/osc-browser.min.js"></script>
+        <script src="../bower_components/flocking/dist/flocking-all.min.js"></script>
+        <script src="../shared/osc-node-component.js"></script>
+        <script src="xy.js"></script>
+    </head>
+
+    <body>
+        <div id="pad"></div>
+        <script>
+            ork.networkSynth.xy("#pad");
+        </script>
+    </body>
+</html>
